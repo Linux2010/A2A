@@ -83,7 +83,7 @@ class CurrencyAgent:
     )
 
     def __init__(self):
-        self.model = ChatGoogleGenerativeAI(model='gemini-2.0-flash')
+        self.model = ChatGoogleGenerativeAI(model='gemini-2.0-flash',api_key='xxxx')
         self.tools = [get_exchange_rate]
 
         self.graph = create_react_agent(
